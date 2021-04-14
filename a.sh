@@ -98,7 +98,7 @@ sudo firewall-cmd --permanent --add-port=80/tcp;
 elif [[ "$num" -eq 4 ]];
 then 
 cd ~
-echo Type in new node version \(eg. 1.0.1.27\)
+echo Type in new node version \(eg. 1.0.1.29\)
 read version
 cd ~
 wget https://neuralium.com/sites/default/files/wallet/linux/latest/neuralium.node-linux-x64-MAINNET-$version.tar.gz
@@ -111,7 +111,7 @@ mv $HOME/neuralium-cli/linux-x64 $HOME/neuralium-cli/v$version
 
 elif [[ "$num" -eq 5 ]];
 then 
-screen -S neuralium $HOME/neuralium-node/v1.0.1.27/Neuralium;
+screen -S neuralium $HOME/neuralium-node/v1.0.1.29/Neuralium;
 
 elif [[ "$num" -eq 6 ]];
 then
@@ -119,7 +119,7 @@ killall screen;
 
 elif [[ "$num" -eq 7 ]];
 then 
-$HOME/neuralium-cli/v1.0.1.27/neuraliumcli;
+$HOME/neuralium-cli/v1.0.1.29/neuraliumcli;
 
 elif [[ "$num" -eq 8 ]];
 then
