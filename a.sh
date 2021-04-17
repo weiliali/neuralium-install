@@ -79,7 +79,7 @@ yum install firewalld -y
 systemctl start firewalld
 yum install screen -y
 yum install vim -y
-
+yum install -y redhat-lsb
 sudo dnf install dotnet-sdk-5.0 -y
 sudo dnf install aspnetcore-runtime-5.0 -y
 sudo dnf install dotnet-runtime-5.0 -y
