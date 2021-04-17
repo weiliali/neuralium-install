@@ -31,6 +31,9 @@ sudo apt-get install -y dotnet-runtime-5.0
 sudo firewall-cmd --add-port=33888/tcp
 sudo firewall-cmd --permanent --add-port=33888/tcp
 
+sudo firewall-cmd --add-port=1025/tcp
+sudo firewall-cmd --permanent --add-port=1025/tcp
+
 sudo firewall-cmd --add-port=32888/tcp
 sudo firewall-cmd --permanent --add-port=32888/tcp
 
@@ -68,6 +71,9 @@ sudo firewall-cmd --permanent --add-port=33888/tcp
 sudo firewall-cmd --add-port=32888/tcp
 sudo firewall-cmd --permanent --add-port=32888/tcp
 
+sudo firewall-cmd --add-port=1025/tcp
+sudo firewall-cmd --permanent --add-port=1025/tcp
+
 sudo firewall-cmd --add-port=80/tcp
 sudo firewall-cmd --permanent --add-port=80/tcp;
 
@@ -88,6 +94,9 @@ yum install firewalld -y
 systemctl start firewalld
 sudo firewall-cmd --add-port=33888/tcp
 sudo firewall-cmd --permanent --add-port=33888/tcp
+
+sudo firewall-cmd --add-port=1025/tcp
+sudo firewall-cmd --permanent --add-port=1025/tcp
 
 sudo firewall-cmd --add-port=32888/tcp
 sudo firewall-cmd --permanent --add-port=32888/tcp
